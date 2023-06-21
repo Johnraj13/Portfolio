@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/8b8b7701bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span></h2>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#works">Projects</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>John</span> Raj</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="main">
+            <img class="img" src="img2.jpg" alt="Image not found">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h4>Developer <span>& Designer</span></h4>
+                <p>Hello, I'm John Raj, a dedicated front-end web developer with 1 years of experience. I'm specialize in creating visually appealing and user-friendly experiences using HTML, CSS, JavaScript, and front-end frameworks.
+                    Collaborating with designers and cross-functional teams, I transform creative concepts into robust and responsive websites. Connect with me to discuss your next project. </p>
+                    <div class="tab-titles">
+                        <h3 class="tab-links active-link" onclick="opentab('Skills')">Skills</h3>
+                        <h3 class="tab-links" onclick="opentab('Experience')">Experience</h3>
+                        <h3 class="tab-links" onclick="opentab('Education')">Education</h3>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <h3 class="tab-links active-link"></h3>
+                            <br>
+                            <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br />Web app interfaces</li>
+                            <li><span>App Development</span><br />Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <h3 class="tab-links active-link"></h3>
+                            <br>
+                            <li><span>Web Development</span><br>1 year</li>
+                            <li><span>Bot Development</span><br>1 year</li>
+                            <li><span>App Development</span><br>Starting to learn</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <h3 class="tab-links active-link"></h3>
+                            <br>
+                            <li><span>Higher Education</span><br>Velammal Matri Hr Sec School</li>
+                            <li><span>College</span><br>VIT Chennai</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="service">
+        <div class="title">
+            <h2>Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web development</h5>
+                <div class="pra">
+                    <p>Every Website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
+                    <p style="text-align: center;">
+                    <a href="#" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h5>Bot development</h5>
+                <div class="pra">
+                    <p>Bot development requires a combination of programming skills, knowledge of the chosen platform and technology, and an understanding of user needs and conversational design principles.</p>
+                    <p style="text-align: center;">
+                    <a href="#" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h5>App development</h5>
+                <div class="pra">
+                    <p>This involves creating the user interface and user experience design for the app. The UI design focuses on the visual elements, while the UX design ensures a smooth and intuitive user interaction.</p>
+                    <p style="text-align: center;">
+                    <a href="#" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="works">
+        <div class="title">
+            <h2>Works</h2>
+            <div class="box">
+                <div class="icard">
+                    <img src="c1.jpg" alt="Image not found">
+                </div>
+                <div class="icard">
+                    <img src="c2.png" alt="Image not found">
+                </div>
+                <div class="icard">
+                    <img src="c3.png" alt="Image not found">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="layer">
+                    <h3>Word Counter</h3>
+                    <p>Helps you to count the words and characters in a sentence</p>
+                    <a href="https://johnraj13.github.io/Reactjs-Task1/" class="button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="layer">
+                    <h3>Color Picker</h3>
+                    <p>Helps you to pick a specific color from the palet</p>
+                    <a href="https://johnraj13.github.io/Reactjs-Task3/" class="button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="layer">
+                    <h3>Age calculator</h3>
+                    <p>Helps you to calculate your age upto date</p>
+                    <a href="https://johnraj13.github.io/Reactjs-Task5/" class="button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="see-more">
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact-me">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>  johnraj.i2020@vitstudent.ac.in</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>  6383547368</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/john-raj-155207208/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/mr__king__13?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <br>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer>
+        <p class="end"><i class="fa-regular fa-copyright"></i> Copyrights by John Raj</p>
+    </footer>  
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwTg1WgVvblFnyEC7A3b-u95gUaZUGQNKLpeketSrf8yfbf1vxdsBQl_BoKs55Rg3quzw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Response sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
